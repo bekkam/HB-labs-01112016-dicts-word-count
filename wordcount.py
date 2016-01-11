@@ -20,7 +20,7 @@ def count_words(file_name):
             quantity = word_occurance.get(word, 0)
             word_occurance[word] = quantity + 1    
 
-    print word_occurance
+    print word_occurance.items()
 
 
-count_words("test.txt")    
+count_words("twain.txt")    
