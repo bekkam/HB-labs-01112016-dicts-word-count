@@ -1,10 +1,3 @@
-# put your code here.
-#open txt file
-#read file line by line
-#create empty dict
-# for every new code create a new key w val 1
-# for repeat words increment value
-
 def count_words(file_name):
     """Counts words in a txt file"""
 
@@ -21,9 +14,9 @@ def count_words(file_name):
             if not word.isalpha():
                 word = word[:-1]
             quantity = word_occurance.get(word, 0)
-            word_occurance[word] = quantity + 1    
+            word_occurance[word] = quantity + 1
 
     print word_occurance.items()
 
 
-count_words("test.txt")    
+count_words("test.txt")
